@@ -45,6 +45,32 @@ Atomic Bot connects the best AI models to your everyday tools and actually takes
 
 ---
 
+### Atomic Chat
+
+<a href="https://github.com/AtomicBot-ai/Atomic-Chat/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/Atomic-Chat?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/Atomic-Chat/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/Atomic-Chat?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/Atomic-Chat/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/Atomic-Chat?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/Atomic-Chat#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
+
+<p align="center">
+  <img src="https://github.com/AtomicBot-ai/Atomic-Chat/raw/main/assets/preview.png" width="100%" alt="Atomic Chat Preview" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/tag/v1.0.23"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>
+</p>
+
+Open-source ChatGPT alternative. Run local LLMs or connect cloud models — with full control and privacy. Download and run models from HuggingFace, or connect to OpenAI, Anthropic, Mistral, Groq, and others.
+
+- 🧠 **Local AI Models** — download and run LLMs (Llama, Gemma, Qwen, and more) from HuggingFace
+- ☁️ **Cloud Integration** — connect to OpenAI, Anthropic, Mistral, Groq, MiniMax, and others
+- 🤖 **Custom Assistants** — create specialized AI assistants for your tasks
+- 🔌 **OpenAI-Compatible API** — local server at `localhost:1337` for other applications
+- 🔗 **Model Context Protocol** — MCP integration for agentic capabilities
+- 🔒 **Privacy First** — everything runs locally when you want it to
+
+---
+
 ### ClawHub Layer API
 
 <a href="https://github.com/AtomicBot-ai/clawhub-layer-api/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/clawhub-layer-api?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
