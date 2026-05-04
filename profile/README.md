@@ -54,8 +54,8 @@ A local operator agent for `llama.cpp` — same product class as OpenClaw Operat
 </p>
 
 <p align="center">
-  <a href="https://atomicbot.ai/#Download"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>&nbsp;&nbsp;
-  <a href="https://atomicbot.ai/#Download"><img src="https://img.shields.io/badge/Download_for-Windows-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="44" alt="Download for Windows" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/AtomicBot-ai/atomicbot/releases/latest"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/AtomicBot-ai/atomicbot/releases/latest"><img src="https://img.shields.io/badge/Download_for-Windows-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="44" alt="Download for Windows" /></a>&nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Linux-Coming_Soon-555?style=for-the-badge&logo=linux&logoColor=white" height="44" alt="Linux — coming soon" />
 </p>
 
