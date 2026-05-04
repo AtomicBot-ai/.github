@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <strong>Private. Open source. Free with your own API keys. One-click install. Developer-friendly API.</strong>
+  <strong>Private. Open source. One-click install. Developer-friendly API.</strong>
 </p>
 
 ---
