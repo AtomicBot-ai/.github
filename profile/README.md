@@ -28,7 +28,13 @@
 Install in one line:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/AtomicBot-ai/atomic-agent/main/scripts/install.sh | sh
+curl -fsSL https://api.atomicbot.ai/agent-install | sh
+```
+
+Then start the agent from your terminal:
+
+```sh
+atomic-agent
 ```
 
 A local operator agent for `llama.cpp` — same product class as OpenClaw Operator and Hermes Agent, but shipped as a standalone SEA binary and tuned to squeeze the most out of small local models. Your data, traces, browser profile, memory, and model traffic stay on your machine by default.
