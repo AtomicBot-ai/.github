@@ -5,11 +5,14 @@
 </p>
 
 <p align="center">
-  <a href="https://atomicbot.ai">Home Page</a> | <a href="https://github.com/AtomicBot-ai/atomicbot#readme">Documentation</a> | <a href="https://discord.gg/2TXafRV69m">Discord</a>
+  <a href="https://atomicbot.ai">Website</a> ·
+  <a href="https://github.com/AtomicBot-ai/atomicbot#readme">Docs</a> ·
+  <a href="https://discord.gg/2TXafRV69m">Discord</a> ·
+  <a href="https://x.com/atomicbot_ai">X</a>
 </p>
 
 <p align="center">
-  <strong>Private. Open source. One-click install. Developer-friendly API.</strong>
+  Open-source local AI — agents, chat, and inference. Private by default.
 </p>
 
 ---
@@ -22,29 +25,30 @@
 <a href="https://github.com/AtomicBot-ai/atomic-agent#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
 
 <p align="center">
-  <img src="https://github.com/AtomicBot-ai/atomic-agent/raw/main/assets/demo.gif" width="100%" alt="Atomic Agent Preview" />
+  <img src="https://github.com/AtomicBot-ai/atomic-agent/raw/main/assets/demo.gif" width="100%" alt="Atomic Agent" />
 </p>
 
-Install in one line:
+A local-first operator agent for `llama.cpp`. Standalone SEA binary, tuned for small local models. Data, traces, browser profile, memory, and model traffic stay on your machine.
+
+#### Install
 
 ```sh
 curl -fsSL https://api.atomicbot.ai/agent-install | sh
 ```
 
-Then start the agent from your terminal:
+#### Run
 
 ```sh
 atomic-agent
 ```
 
-A local operator agent for `llama.cpp` — same product class as OpenClaw Operator and Hermes Agent, but shipped as a standalone SEA binary and tuned to squeeze the most out of small local models. Your data, traces, browser profile, memory, and model traffic stay on your machine by default.
+#### Capabilities
 
-- 🧊 **Built for local inference** — stable cache-hot prompt prefix, externalized state in SQLite, GBNF grammar-constrained tool calls, parallel tool batches
-- 🌐 **Operates a real desktop** — system browser via compact ARIA snapshots, shell, filesystem, documents (PDF/DOCX/XLSX/etc.), git, clipboard, HTTP, notifications
-- 🧰 **Skills, memory, tasks** — local Markdown playbooks loaded on demand, FTS5 note recall, durable cron and webhook-triggered work
-- 🔌 **Multiple surfaces** — TUI, CLI, OpenAI-compatible HTTP server, and a Tauri sidecar speaking newline-delimited JSON for desktop integrations
-- 🛡️ **Approvals & traces** — dangerous actions gated by policy, append-only NDJSON traces with prompt-drift replay
-- 💸 **No SaaS meter** — once you have local hardware and model files, no per-prompt, per-token, or per-seat fees
+- System browser via ARIA snapshots, shell, filesystem, documents (PDF/DOCX/XLSX), git, clipboard, HTTP, notifications
+- GBNF grammar-constrained tool calls, parallel tool batches, cache-hot prompt prefix, externalized state in SQLite
+- Local Markdown skills loaded on demand, FTS5 note recall, durable cron and webhook-triggered tasks
+- TUI, CLI, OpenAI-compatible HTTP server, and a Tauri sidecar speaking newline-delimited JSON
+- Policy-gated dangerous actions, append-only NDJSON traces with prompt-drift replay
 
 ---
 
@@ -56,24 +60,35 @@ A local operator agent for `llama.cpp` — same product class as OpenClaw Operat
 <a href="https://github.com/AtomicBot-ai/Atomic-Chat#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
 
 <p align="center">
-  <img src="https://github.com/AtomicBot-ai/Atomic-Chat/raw/main/assets/preview.png" width="100%" alt="Atomic Chat Preview" />
+  <img src="https://github.com/AtomicBot-ai/Atomic-Chat/raw/main/assets/preview.png" width="100%" alt="Atomic Chat" />
 </p>
 
-<p align="center">
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/latest"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/latest"><img src="https://img.shields.io/badge/Download_for-Windows-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="44" alt="Download for Windows" /></a>&nbsp;&nbsp;
+An open-source desktop AI app. Run local LLMs from Hugging Face or connect cloud models (OpenAI, Anthropic, Mistral, Groq, MiniMax, others). Available on macOS, Windows, and iOS.
+
+#### Download
+
+<p>
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/latest"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>&nbsp;
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/latest"><img src="https://img.shields.io/badge/Download_for-Windows-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="44" alt="Download for Windows" /></a>&nbsp;
   <a href="https://apps.apple.com/us/app/atomic-chat-private-local-ai/id6761720226"><img src="https://img.shields.io/badge/Download_for-iOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for iOS" /></a>
 </p>
 
-Open-source ChatGPT alternative. Run local LLMs or connect cloud models — with full control and privacy. Download and run models from HuggingFace, or connect to OpenAI, Anthropic, Mistral, Groq, and others. Available on macOS, Windows, and iOS.
+#### Local OpenAI-compatible server
 
-- 🧠 **Local AI Models** — download and run LLMs (Llama, Gemma, Qwen, and more) from HuggingFace
-- ☁️ **Cloud Integration** — connect to OpenAI, Anthropic, Mistral, Groq, MiniMax, and others
-- 🤖 **Custom Assistants** — create specialized AI assistants for your tasks
-- 🔌 **OpenAI-Compatible API** — local server at `localhost:1337` for other applications
-- 🔗 **Model Context Protocol** — MCP integration for agentic capabilities
-- 📱 **Cross-platform** — desktop apps for macOS and Windows, plus a native iOS app
-- 🔒 **Privacy First** — everything runs locally when you want it to
+```sh
+curl http://localhost:1337/v1/chat/completions -d '{
+  "model": "llama-3.2-3b-instruct",
+  "messages": [{ "role": "user", "content": "Why is the sky blue?" }]
+}'
+```
+
+#### Highlights
+
+- Run LLMs (Llama, Gemma, Qwen, others) from Hugging Face — fully offline
+- Connect cloud providers: OpenAI, Anthropic, Mistral, Groq, MiniMax
+- Custom assistants for specialized tasks
+- MCP integration for agentic capabilities
+- Native iOS app, not a wrapper
 
 ---
 
@@ -85,22 +100,26 @@ Open-source ChatGPT alternative. Run local LLMs or connect cloud models — with
 <a href="https://github.com/AtomicBot-ai/atomic-hermes#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
 
 <p align="center">
-  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/hermes-ui.png" width="100%" alt="Atomic Hermes Preview" />
+  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/hermes-ui.png" width="100%" alt="Atomic Hermes" />
 </p>
 
-<p align="center">
+A native autonomous AI agent for desktop. Built on the [Hermes Agent](https://github.com/NousResearch/hermes-agent) core by Nous Research, with computer use, time-travel file history, and offline operation.
+
+#### Download
+
+<p>
   <a href="https://github.com/AtomicBot-ai/atomic-hermes/releases/latest"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>
 </p>
 
-The agent that grows with you. A native AI assistant — not a browser tab, not a CLI wrapper. An autonomous agent with hands, eyes, memory, and a real workspace. Powered by the [Hermes Agent](https://github.com/NousResearch/hermes-agent) core by Nous Research and tuned for self-improvement, time-travel file history, and fully offline operation.
+#### Highlights
 
-- 👁️ **Computer Use that actually lands the click** — every screenshot is paired with native OCR (Apple Vision / Windows.Media.Ocr) so the agent gets pixel-accurate coordinates instead of guessing
-- 🕰️ **Time-travel file history** — every file the agent touches is silently snapshotted before and after; diff or restore any version with one click, no git required
-- 🧠 **Self-improving skills & memory** — the agent writes its own procedures after complex tasks and decides what's worth remembering across sessions
-- ☁️ **Local or cloud, one click** — bundled inference engine downloads a model that fits your hardware, or connect 20+ cloud providers (OpenRouter, Anthropic, OpenAI, Gemini, DeepSeek, and more)
-- 💬 **One agent, 16+ messengers** — Telegram, Discord, Slack, WhatsApp, Signal, iMessage, Email, Matrix, Teams, and others — all sharing the same memory
-- 🛠️ **40+ tools, MCP-native** — file ops, web search, code execution, subagents, cron scheduling, browser automation, Skills Hub from [agentskills.io](https://agentskills.io)
-- 🛡️ **Approval gates** — native modals confirm dangerous shell commands and writes before they run
+- Computer use with native OCR (Apple Vision / Windows.Media.Ocr) — pixel-accurate click coordinates, no guessing
+- Time-travel file history: every file the agent touches is snapshotted before and after, one-click diff or restore
+- Self-improving skills and memory: the agent writes its own procedures and decides what to remember across sessions
+- Bundled inference engine, or 20+ cloud providers (OpenRouter, Anthropic, OpenAI, Gemini, DeepSeek, others)
+- One agent across 16+ messengers — Telegram, Discord, Slack, WhatsApp, Signal, iMessage, Email, Matrix, Teams
+- 40+ tools, MCP-native: file ops, web search, code execution, subagents, cron, browser automation, [agentskills.io](https://agentskills.io) Skills Hub
+- Approval modals for dangerous shell commands and writes
 
 ---
 
@@ -112,26 +131,28 @@ The agent that grows with you. A native AI assistant — not a browser tab, not 
 <a href="https://github.com/AtomicBot-ai/atomicbot#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
 
 <p align="center">
-  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/chat.jpg" width="100%" alt="Atomic Bot Preview" />
+  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/chat.jpg" width="100%" alt="Atomic Bot" />
 </p>
 
-<p align="center">
-  <a href="https://github.com/AtomicBot-ai/atomicbot/releases/latest"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/AtomicBot-ai/atomicbot/releases/latest"><img src="https://img.shields.io/badge/Download_for-Windows-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="44" alt="Download for Windows" /></a>&nbsp;&nbsp;
+A native desktop app that turns [OpenClaw](https://github.com/openclaw/openclaw) (330k+ stars) into a personal AI assistant. No terminal, no config, no Docker.
+
+#### Download
+
+<p>
+  <a href="https://github.com/AtomicBot-ai/atomicbot/releases/latest"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>&nbsp;
+  <a href="https://github.com/AtomicBot-ai/atomicbot/releases/latest"><img src="https://img.shields.io/badge/Download_for-Windows-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="44" alt="Download for Windows" /></a>&nbsp;
   <img src="https://img.shields.io/badge/Linux-Coming_Soon-555?style=for-the-badge&logo=linux&logoColor=white" height="44" alt="Linux — coming soon" />
 </p>
 
-The easiest way to run [OpenClaw](https://github.com/openclaw/openclaw). A native desktop app that turns the open-source AI agent framework (330k+ stars) into a personal AI assistant — no terminal, no config files, no Docker. Download, open, pick your AI provider, and start working.
+#### Highlights
 
-Atomic Bot connects the best AI models to your everyday tools and actually takes action: drafts emails, schedules meetings, summarizes docs, automates browser tasks, and runs 13,000+ skills from ClawHub.
-
-- 🔒 **Private** — runs locally, your data stays on your device
-- 🆓 **Free** — use your own LLM API keys and pay nothing
-- 🤖 **Multi-model** — Claude, GPT, Gemini, and more — switch on the fly
-- 💬 **Multi-messenger** — one AI across Telegram, Slack, Discord, WhatsApp
-- 🎙️ **Voice** — built-in Whisper transcription, local or cloud
-- 🧠 **Memory** — persistent context across sessions and tasks
-- 🔄 **Auto-updates** — always on the latest OpenClaw release
+- Drafts emails, schedules meetings, summarizes docs, automates the browser
+- 13,000+ skills from ClawHub
+- Multi-model: Claude, GPT, Gemini — switch on the fly with your own API keys
+- One AI across Telegram, Slack, Discord, WhatsApp
+- Built-in Whisper transcription, local or cloud
+- Persistent memory across sessions and tasks
+- Auto-updates to the latest OpenClaw release
 
 ---
 
@@ -143,38 +164,35 @@ Atomic Bot connects the best AI models to your everyday tools and actually takes
 <a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
 
 <p align="center">
-  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/atomic%20llama.png" width="100%" alt="Atomic LLaMA Preview" />
+  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/atomic%20llama.png" width="100%" alt="Atomic LLaMA" />
 </p>
 
-A `llama.cpp` fork with **TurboQuant** WHT-rotated KV cache & weight compression and **Gemma 4 MTP** speculative decoding — for ~30-50% throughput gains on the same hardware. Full GGUF compatibility with the wider ecosystem; drop-in replacement for upstream `llama.cpp` (same `llama-cli`, `llama-server`, `llama-bench`, same OpenAI-compatible HTTP API).
+A `llama.cpp` fork with TurboQuant KV cache compression and Gemma 4 MTP speculative decoding. ~30-50% throughput gains on the same hardware, drop-in compatible with upstream tools and GGUF.
 
-Powers local inference inside Atomic Chat, Atomic Hermes, and Atomic Agent — published standalone for anyone who wants the speedup.
+#### TurboQuant KV cache
 
-**TurboQuant KV cache compression** — cut KV memory traffic at long contexts:
-
-```sh
-# ~4.3x KV compression vs F16, full GPU offload, Flash-Attn on.
-llama-server -m model.gguf -c 32768 \
-  -ngl 99 -ctk turbo3 -ctv turbo3 -fa on
-```
-
-**Gemma 4 MTP speculative decoding** — pair a `gemma4` target with the official `gemma4_assistant` head:
+WHT-rotated 2/3/4-bit KV cache with backend-native kernels (Metal `TurboFlash`, CUDA, Vulkan, HIP). `turbo3` is the default — 3-bit, ~4.3× compression vs F16.
 
 ```sh
-llama-server \
-  -m /path/to/gemma-4-target.gguf \
-  --mtp-head /path/to/gemma-4-assistant-Q4_K_M.gguf \
-  --spec-type mtp \
-  --draft-block-size 3 \
-  -c 16384 -ngl 99 -ngld 99 -fa on
+llama-server -m model.gguf -c 32768 -ngl 99 -fa on \
+  -ctk turbo3 -ctv turbo3
 ```
 
-- ⚡ **TurboQuant KV cache** — `turbo2` / `turbo3` / `turbo4` (2/3/4-bit, WHT + PolarQuant); ~4.3× compression vs F16 at the default `turbo3`, ~6.4× at `turbo2`
-- 🧠 **Gemma 4 MTP speculative decoding** — +30-50% short-prompt throughput on Gemma 4 26B-A4B / 31B; 85-88% accept rate on dense targets
-- 🔧 **TurboQuant weight quantization** — `TQ3_1S` / `TQ4_1S` cut model size ~25-35% vs Q8_0 with single-digit-% PPL deltas
-- 🍎 **Backend-native kernels** — Metal `TurboFlash` decode kernel on Apple Silicon, plus dedicated kernels for CUDA, Vulkan, and HIP
-- 🧊 **Full GGUF compatibility** — works with every model on Hugging Face that runs on stock `llama.cpp` (Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, and more)
-- 🧱 **Upstream-tracked** — regularly synced with `ggml-org/llama.cpp` so new model architectures land quickly
+#### Gemma 4 MTP speculative decoding
+
+Pair any `gemma4` target with the official `gemma4_assistant` head — loaded into the target context, no second tokenizer or KV cache. +30-50% short-prompt throughput on Gemma 4 26B-A4B / 31B at 85-88% accept rate. [Pre-built assistant heads on Hugging Face.](https://huggingface.co/collections/AtomicChat/gemma-4-assistant-gguf)
+
+```sh
+llama-server -m gemma-4-target.gguf -c 16384 -ngl 99 -ngld 99 -fa on \
+  --mtp-head gemma-4-assistant-Q4_K_M.gguf \
+  --spec-type mtp --draft-block-size 3
+```
+
+#### Also included
+
+- `TQ3_1S` / `TQ4_1S` weight quantization via `llama-quantize` — 25-35% smaller than Q8_0, single-digit % PPL delta
+- Regularly synced with `ggml-org/llama.cpp`
+- Powers local inference in Atomic Chat, Atomic Hermes, and Atomic Agent
 
 ---
 
@@ -185,22 +203,39 @@ llama-server \
 <a href="https://github.com/AtomicBot-ai/atomic-computeruse/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-computeruse?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
 <a href="https://www.npmjs.com/package/@atomicbotai/computer-use"><img src="https://img.shields.io/npm/v/@atomicbotai/computer-use?style=flat&logo=npm&label=npm&color=cb3837" alt="npm" /></a>
 
-Framework-agnostic desktop automation for AI agents. Give your agent eyes and hands — screenshot the screen, click, type, scroll, drag, read text via OCR, and more. Works with any tool-calling LLM framework, MCP server, or custom pipeline.
+Framework-agnostic desktop automation for AI agents. Screenshot, click, type, scroll, drag, OCR — works with any tool-calling LLM, MCP server, or custom pipeline.
 
-The library that powers computer use in Atomic Hermes — also published standalone for anyone to use:
+#### Install
 
-- 📦 **[`@atomicbotai/computer-use`](https://www.npmjs.com/package/@atomicbotai/computer-use)** — the core TypeScript library: OCR, actions, overlay, session lock
-- 🔌 **[`@atomicbotai/computer-use-mcp`](https://github.com/AtomicBot-ai/atomic-computeruse-mcp)** — MCP server, drop it into Claude Desktop, Cursor, Windsurf, or any MCP client
+```sh
+npm install @atomicbotai/computer-use
+```
 
-**Key features:**
+#### Use
 
-- 🔍 **Zero-dependency OCR** — native engines (Apple Vision on macOS, Windows.Media.Ocr on Windows) extract text with pixel-precise coordinates and confidence scores. No Tesseract, no cloud, no API keys
-- 📸 **Screenshot + anchors** — turns a blurry downscaled screenshot into a structured map of the UI: `"Send" at (1450, 890)` instead of guessing where the button is
-- 🖱️ **Full action set** — click / double / triple, type, press, scroll, drag, hold key, clipboard, open/switch app, list displays
-- 🟢 **Native overlay** — Swift on macOS, PowerShell on Windows — visual indicator whenever the agent is driving the mouse and keyboard
-- 🔒 **Session lock** — file-based lock prevents two agents from fighting over the desktop
-- 🛡️ **Guardrails** — prevents misclicks in dock/launcher and submit zones
-- 🐛 **Debug artifacts** — save screenshots, OCR results, and tool outputs per action for inspection
+```ts
+import { screenshot, click, type } from "@atomicbotai/computer-use";
+
+const { image, anchors } = await screenshot();
+const send = anchors.find(a => a.text === "Send");
+await click(send.x, send.y);
+await type("hello");
+```
+
+#### Packages
+
+- [`@atomicbotai/computer-use`](https://www.npmjs.com/package/@atomicbotai/computer-use) — TypeScript library: OCR, actions, overlay, session lock
+- [`@atomicbotai/computer-use-mcp`](https://github.com/AtomicBot-ai/atomic-computeruse-mcp) — MCP server for Claude Desktop, Cursor, Windsurf, or any MCP client
+
+#### Highlights
+
+- Zero-dependency native OCR (Apple Vision on macOS, Windows.Media.Ocr on Windows) — no Tesseract, no cloud, no API keys
+- Pixel-accurate UI anchors: `"Send" at (1450, 890)` instead of guessing from a downscaled screenshot
+- Full action set: click / double / triple, type, press, scroll, drag, hold key, clipboard, app switch, list displays
+- Native overlay (Swift on macOS, PowerShell on Windows) shows when the agent is driving the mouse and keyboard
+- File-based session lock prevents two agents from fighting over the desktop
+- Guardrails against misclicks in dock/launcher and submit zones
+- Per-action debug artifacts: screenshots, OCR results, tool outputs
 
 ---
 
@@ -211,39 +246,23 @@ The library that powers computer use in Atomic Hermes — also published standal
 <a href="https://github.com/AtomicBot-ai/clawhub-layer-api/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/clawhub-layer-api?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
 <a href="https://github.com/AtomicBot-ai/clawhub-layer-api#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
 
-The official [ClawHub](https://github.com/openclaw/clawhub) API is limited — many endpoints are missing, and getting the full dataset means querying the Convex database directly.
+A complete REST API for [ClawHub](https://github.com/openclaw/clawhub). The official ClawHub API exposes a subset of the data; this layer aggregates everything into clean endpoints, no Convex knowledge required.
 
-**[ClawHub Layer API](https://github.com/AtomicBot-ai/clawhub-layer-api)** solves this by providing a **complete, standalone REST API** that aggregates everything into clean, ready-to-use endpoints:
+#### Highlights
 
-- 🗂️ **Full data coverage** — skills, metadata, and everything the official API doesn't expose
-- 🔄 **Auto-syncing** — periodically pulls and caches the latest data from Convex, always up to date
-- 🛠️ **Standard REST** — clean endpoints, no Convex knowledge required
-- ⚡ **Fast & self-contained** — no direct dependency on upstream infrastructure at query time
-- 🔗 **Integration-ready** — designed to plug into your apps, bots, and workflows
-
-> Building on top of the OpenClaw / ClawHub ecosystem? This API is the simplest way to get the data you need — without going through Convex yourself.
+- Full coverage: skills, metadata, and everything the official API doesn't expose
+- Auto-syncing: periodically pulls and caches the latest data from Convex
+- Standard REST, no upstream dependency at query time
+- Drop-in for apps, bots, and workflows
 
 ---
 
-### 🤝 Get Involved
+### Community
 
-We're building in the open and would love your help!
-
-<p align="center">
-  <a href="https://discord.gg/2TXafRV69m"><img src="https://img.shields.io/badge/💬_Chat_on-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/atomicbot/issues"><img src="https://img.shields.io/badge/🐛_Report-Issues-FF4444?style=for-the-badge" alt="Report Issues" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/atomicbot/pulls"><img src="https://img.shields.io/badge/🔀_Submit-PRs-44CC11?style=for-the-badge" alt="Submit PRs" /></a>
+<p>
+  <a href="https://discord.gg/2TXafRV69m"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>&nbsp;
+  <a href="https://x.com/atomicbot_ai"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=fff" alt="X" /></a>&nbsp;
+  <a href="https://www.linkedin.com/company/atomicbot/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=fff" alt="LinkedIn" /></a>
 </p>
 
----
-
-<p align="center">
-  <a href="https://atomicbot.ai"><img src="https://img.shields.io/badge/🌐-atomicbot.ai-000?style=flat" alt="Website" /></a>&nbsp;
-  <a href="https://discord.gg/2TXafRV69m"><img src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat&logo=discord&logoColor=fff" alt="Discord" /></a>&nbsp;
-  <a href="https://x.com/atomicbot_ai"><img src="https://img.shields.io/badge/X-Follow-000?style=flat&logo=x&logoColor=fff" alt="X" /></a>&nbsp;
-  <a href="https://www.linkedin.com/company/atomicbot/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=fff" alt="LinkedIn" /></a>
-</p>
-
-<p align="center">
-  <sub>© 2026 Atomic · Built with ❤️ · <a href="https://atomicbot.ai">atomicbot.ai</a></sub>
-</p>
+<sub>© 2026 Atomic · <a href="https://atomicbot.ai">atomicbot.ai</a></sub>
