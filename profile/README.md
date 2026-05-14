@@ -123,7 +123,7 @@ A native autonomous AI agent for desktop. Built on the [Hermes Agent](https://gi
 
 ---
 
-### Atomic Bot
+### Atomic Claw
 
 <a href="https://github.com/AtomicBot-ai/atomicbot/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomicbot?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
 <a href="https://github.com/AtomicBot-ai/atomicbot/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomicbot?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
