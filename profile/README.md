@@ -17,41 +17,6 @@
 
 ---
 
-### Atomic Agent
-
-<a href="https://github.com/AtomicBot-ai/atomic-agent/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-agent?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
-
-<p align="center">
-  <img src="https://github.com/AtomicBot-ai/atomic-agent/raw/main/assets/demo.gif" width="100%" alt="Atomic Agent" />
-</p>
-
-A local-first operator agent for `llama.cpp`. Standalone SEA binary, tuned for small local models. Data, traces, browser profile, memory, and model traffic stay on your machine.
-
-#### Install
-
-```sh
-curl -fsSL https://api.atomicbot.ai/agent-install | sh
-```
-
-#### Run
-
-```sh
-atomic-agent
-```
-
-#### Capabilities
-
-- System browser via ARIA snapshots, shell, filesystem, documents (PDF/DOCX/XLSX), git, clipboard, HTTP, notifications
-- GBNF grammar-constrained tool calls, parallel tool batches, cache-hot prompt prefix, externalized state in SQLite
-- Local Markdown skills loaded on demand, FTS5 note recall, durable cron and webhook-triggered tasks
-- TUI, CLI, OpenAI-compatible HTTP server, and a Tauri sidecar speaking newline-delimited JSON
-- Policy-gated dangerous actions, append-only NDJSON traces with prompt-drift replay
-
----
-
 ### Atomic Chat
 
 <a href="https://github.com/AtomicBot-ai/Atomic-Chat/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/Atomic-Chat?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
@@ -89,6 +54,46 @@ curl http://localhost:1337/v1/chat/completions -d '{
 - Custom assistants for specialized tasks
 - MCP integration for agentic capabilities
 - Native iOS app, not a wrapper
+
+---
+
+### Atomic LLaMA
+
+<a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-llama-cpp-turboquant?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-llama-cpp-turboquant?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/commits/master"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-llama-cpp-turboquant?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
+
+<p align="center">
+  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/atomic%20llama.png" width="100%" alt="Atomic LLaMA" />
+</p>
+
+A `llama.cpp` fork with TurboQuant KV cache compression and Gemma 4 MTP speculative decoding. ~30-50% throughput gains on the same hardware, drop-in compatible with upstream tools and GGUF.
+
+#### TurboQuant KV cache
+
+WHT-rotated 2/3/4-bit KV cache with backend-native kernels (Metal `TurboFlash`, CUDA, Vulkan, HIP). `turbo3` is the default — 3-bit, ~4.3× compression vs F16.
+
+```sh
+llama-server -m model.gguf -c 32768 -ngl 99 -fa on \
+  -ctk turbo3 -ctv turbo3
+```
+
+#### Gemma 4 MTP speculative decoding
+
+Pair any `gemma4` target with the official `gemma4_assistant` head — loaded into the target context, no second tokenizer or KV cache. +30-50% short-prompt throughput on Gemma 4 26B-A4B / 31B at 85-88% accept rate. [Pre-built assistant heads on Hugging Face.](https://huggingface.co/collections/AtomicChat/gemma-4-assistant-gguf)
+
+```sh
+llama-server -m gemma-4-target.gguf -c 16384 -ngl 99 -ngld 99 -fa on \
+  --mtp-head gemma-4-assistant-Q4_K_M.gguf \
+  --spec-type mtp --draft-block-size 3
+```
+
+#### Also included
+
+- `TQ3_1S` / `TQ4_1S` weight quantization via `llama-quantize` — 25-35% smaller than Q8_0, single-digit % PPL delta
+- Regularly synced with `ggml-org/llama.cpp`
+- Powers local inference in Atomic Chat, Atomic Hermes, and Atomic Agent
 
 ---
 
@@ -156,46 +161,6 @@ A native desktop app that turns [OpenClaw](https://github.com/openclaw/openclaw)
 
 ---
 
-### Atomic LLaMA
-
-<a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-llama-cpp-turboquant?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-llama-cpp-turboquant?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/commits/master"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-llama-cpp-turboquant?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
-
-<p align="center">
-  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/atomic%20llama.png" width="100%" alt="Atomic LLaMA" />
-</p>
-
-A `llama.cpp` fork with TurboQuant KV cache compression and Gemma 4 MTP speculative decoding. ~30-50% throughput gains on the same hardware, drop-in compatible with upstream tools and GGUF.
-
-#### TurboQuant KV cache
-
-WHT-rotated 2/3/4-bit KV cache with backend-native kernels (Metal `TurboFlash`, CUDA, Vulkan, HIP). `turbo3` is the default — 3-bit, ~4.3× compression vs F16.
-
-```sh
-llama-server -m model.gguf -c 32768 -ngl 99 -fa on \
-  -ctk turbo3 -ctv turbo3
-```
-
-#### Gemma 4 MTP speculative decoding
-
-Pair any `gemma4` target with the official `gemma4_assistant` head — loaded into the target context, no second tokenizer or KV cache. +30-50% short-prompt throughput on Gemma 4 26B-A4B / 31B at 85-88% accept rate. [Pre-built assistant heads on Hugging Face.](https://huggingface.co/collections/AtomicChat/gemma-4-assistant-gguf)
-
-```sh
-llama-server -m gemma-4-target.gguf -c 16384 -ngl 99 -ngld 99 -fa on \
-  --mtp-head gemma-4-assistant-Q4_K_M.gguf \
-  --spec-type mtp --draft-block-size 3
-```
-
-#### Also included
-
-- `TQ3_1S` / `TQ4_1S` weight quantization via `llama-quantize` — 25-35% smaller than Q8_0, single-digit % PPL delta
-- Regularly synced with `ggml-org/llama.cpp`
-- Powers local inference in Atomic Chat, Atomic Hermes, and Atomic Agent
-
----
-
 ### Atomic Computer Use
 
 <a href="https://github.com/AtomicBot-ai/atomic-computeruse/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-computeruse?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
@@ -254,6 +219,41 @@ A complete REST API for [ClawHub](https://github.com/openclaw/clawhub). The offi
 - Auto-syncing: periodically pulls and caches the latest data from Convex
 - Standard REST, no upstream dependency at query time
 - Drop-in for apps, bots, and workflows
+
+---
+
+### Atomic Agent
+
+<a href="https://github.com/AtomicBot-ai/atomic-agent/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-agent?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
+
+<p align="center">
+  <img src="https://github.com/AtomicBot-ai/atomic-agent/raw/main/assets/demo.gif" width="100%" alt="Atomic Agent" />
+</p>
+
+A local-first operator agent for `llama.cpp`. Standalone SEA binary, tuned for small local models. Data, traces, browser profile, memory, and model traffic stay on your machine.
+
+#### Install
+
+```sh
+curl -fsSL https://api.atomicbot.ai/agent-install | sh
+```
+
+#### Run
+
+```sh
+atomic-agent
+```
+
+#### Capabilities
+
+- System browser via ARIA snapshots, shell, filesystem, documents (PDF/DOCX/XLSX), git, clipboard, HTTP, notifications
+- GBNF grammar-constrained tool calls, parallel tool batches, cache-hot prompt prefix, externalized state in SQLite
+- Local Markdown skills loaded on demand, FTS5 note recall, durable cron and webhook-triggered tasks
+- TUI, CLI, OpenAI-compatible HTTP server, and a Tauri sidecar speaking newline-delimited JSON
+- Policy-gated dangerous actions, append-only NDJSON traces with prompt-drift replay
 
 ---
 
