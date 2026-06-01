@@ -21,6 +21,7 @@
 
 <a href="https://github.com/AtomicBot-ai/Atomic-Chat/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/Atomic-Chat?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
 <a href="https://github.com/AtomicBot-ai/Atomic-Chat/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/Atomic-Chat?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/Atomic-Chat/graphs/contributors"><img src="https://img.shields.io/badge/Contributors-10-ff69b4?style=flat&logo=github" alt="Contributors" /></a>&nbsp;
 <a href="https://github.com/AtomicBot-ai/Atomic-Chat/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/Atomic-Chat?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
 <a href="https://github.com/AtomicBot-ai/Atomic-Chat#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
 
@@ -28,15 +29,21 @@
   <img src="https://github.com/AtomicBot-ai/Atomic-Chat/raw/main/assets/preview.png" width="100%" alt="Atomic Chat" />
 </p>
 
-An open-source desktop AI app. Run local LLMs from Hugging Face or connect cloud models (OpenAI, Anthropic, Mistral, Groq, MiniMax, others). Available on macOS, Windows, and iOS.
+An open-source desktop AI app. Run local LLMs from Hugging Face or connect cloud models (OpenAI, Anthropic, Mistral, Groq, MiniMax, others). Available on macOS, Windows, Linux, iOS, and Android.
 
 #### Download
 
-<p>
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_universal.dmg"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_x64-setup.exe"><img src="https://img.shields.io/badge/Download_for-Windows-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="44" alt="Download for Windows" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_amd64.AppImage"><img src="https://img.shields.io/badge/Download_for-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="44" alt="Download for Linux" /></a>&nbsp;
-  <a href="https://apps.apple.com/us/app/atomic-chat-private-local-ai/id6761720226"><img src="https://img.shields.io/badge/Download_for-iOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for iOS" /></a>
+<p align="left"><b>Desktop</b></p>
+<p align="left">
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_universal.dmg"><img src="https://img.shields.io/badge/macOS-Universal-000000?style=for-the-badge&logo=apple&logoColor=white" height="46" alt="Download for macOS" /></a>&nbsp;
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_x64-setup.exe"><img src="https://img.shields.io/badge/Windows-x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="46" alt="Download for Windows" /></a>&nbsp;
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_amd64.AppImage"><img src="https://img.shields.io/badge/Linux-AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="46" alt="Download for Linux" /></a>
+</p>
+
+<p align="left"><b>Mobile</b></p>
+<p align="left">
+  <a href="https://apps.apple.com/us/app/atomic-chat-private-local-ai/id6761720226"><img src="https://img.shields.io/badge/iOS-App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" height="46" alt="Download for iOS" /></a>&nbsp;
+  <a href="https://play.google.com/store/apps/details?id=chat.atomic.app"><img src="https://img.shields.io/badge/Android-Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white" height="46" alt="Download for Android" /></a>
 </p>
 
 #### Local OpenAI-compatible server
@@ -55,6 +62,20 @@ curl http://localhost:1337/v1/chat/completions -d '{
 - Custom assistants for specialized tasks
 - MCP integration for agentic capabilities
 - Native iOS app, not a wrapper
+
+#### Contributors
+
+<p align="left">
+  <a href="https://github.com/Vect0rM"><img src="https://images.weserv.nl/?url=https://github.com/Vect0rM.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="Vect0rM" /></a>
+  <a href="https://github.com/dtorey-d"><img src="https://images.weserv.nl/?url=https://github.com/dtorey-d.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="dtorey-d" /></a>
+  <a href="https://github.com/MaxKoshJob"><img src="https://images.weserv.nl/?url=https://github.com/MaxKoshJob.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="MaxKoshJob" /></a>
+  <a href="https://github.com/Albert-Atomic"><img src="https://images.weserv.nl/?url=https://github.com/Albert-Atomic.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="Albert-Atomic" /></a>
+  <a href="https://github.com/yanalialiuk"><img src="https://images.weserv.nl/?url=https://github.com/yanalialiuk.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="yanalialiuk" /></a>
+  <a href="https://github.com/corevibe555"><img src="https://images.weserv.nl/?url=https://github.com/corevibe555.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="corevibe555" /></a>
+  <a href="https://github.com/claytonlin1110"><img src="https://images.weserv.nl/?url=https://github.com/claytonlin1110.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="claytonlin1110" /></a>
+  <a href="https://github.com/Fieldnote-Echo"><img src="https://images.weserv.nl/?url=https://github.com/Fieldnote-Echo.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="Fieldnote-Echo" /></a>
+  <a href="https://github.com/Angelopgit"><img src="https://images.weserv.nl/?url=https://github.com/Angelopgit.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="Angelopgit" /></a>
+</p>
 
 ---
 
