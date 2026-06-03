@@ -26,7 +26,7 @@
 <a href="https://github.com/AtomicBot-ai/Atomic-Chat#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
 
 <p align="center">
-  <img src="https://github.com/AtomicBot-ai/Atomic-Chat/raw/main/assets/preview.png" width="100%" alt="Atomic Chat" />
+  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/0529_final.gif" width="100%" alt="Atomic Chat" />
 </p>
 
 An open-source desktop AI app. Run local LLMs from Hugging Face or connect cloud models (OpenAI, Anthropic, Mistral, Groq, MiniMax, others). Available on macOS, Windows, Linux, iOS, and Android.
@@ -35,9 +35,9 @@ An open-source desktop AI app. Run local LLMs from Hugging Face or connect cloud
 
 <p align="left"><b>Desktop</b></p>
 <p align="left">
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_universal.dmg"><img src="https://img.shields.io/badge/macOS-Universal-000000?style=for-the-badge&logo=apple&logoColor=white" height="46" alt="Download for macOS" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_x64-setup.exe"><img src="https://img.shields.io/badge/Windows-x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="46" alt="Download for Windows" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.90/Atomic.Chat_1.1.90_amd64.AppImage"><img src="https://img.shields.io/badge/Linux-AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="46" alt="Download for Linux" /></a>
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.95/Atomic.Chat_1.1.95_universal.dmg"><img src="https://img.shields.io/badge/macOS-Universal-000000?style=for-the-badge&logo=apple&logoColor=white" height="46" alt="Download for macOS" /></a>&nbsp;
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.95/Atomic.Chat_1.1.95_x64-setup.exe"><img src="https://img.shields.io/badge/Windows-x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="46" alt="Download for Windows" /></a>&nbsp;
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.95/Atomic.Chat_1.1.95_amd64.AppImage"><img src="https://img.shields.io/badge/Linux-AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="46" alt="Download for Linux" /></a>
 </p>
 
 <p align="left"><b>Mobile</b></p>
@@ -57,11 +57,13 @@ curl http://localhost:1337/v1/chat/completions -d '{
 
 #### Highlights
 
-- Run LLMs (Llama, Gemma, Qwen, others) from Hugging Face — fully offline
+- Run open-weight LLMs (Llama, Gemma, Qwen, Mistral, Phi) from Hugging Face — fully offline
 - Connect cloud providers: OpenAI, Anthropic, Mistral, Groq, MiniMax
-- Custom assistants for specialized tasks
-- MCP integration for agentic capabilities
-- Native iOS app, not a wrapper
+- One-click agent launch — OpenCode & GitHub Copilot CLI from the Integrations tab
+- Artifacts — live preview panel for HTML/CSS/JS
+- Faster on Apple Silicon — MLX EAGLE-3, MTP, and TurboQuant KV cache
+- MCP integration for agentic capabilities; custom assistants for specialized tasks
+- Native iOS & Android apps, not wrappers
 
 #### Contributors
 
@@ -76,7 +78,6 @@ curl http://localhost:1337/v1/chat/completions -d '{
   <a href="https://github.com/Fieldnote-Echo"><img src="https://images.weserv.nl/?url=https://github.com/Fieldnote-Echo.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="Fieldnote-Echo" /></a>
   <a href="https://github.com/Angelopgit"><img src="https://images.weserv.nl/?url=https://github.com/Angelopgit.png&w=120&h=120&fit=cover&mask=circle" width="54" height="54" alt="Angelopgit" /></a>
 </p>
-
 ---
 
 ### Atomic LLaMA
