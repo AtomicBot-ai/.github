@@ -35,9 +35,9 @@ An open-source desktop AI app. Run local LLMs from Hugging Face or connect cloud
 
 <p align="left"><b>Desktop</b></p>
 <p align="left">
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.95/Atomic.Chat_1.1.95_universal.dmg"><img src="https://img.shields.io/badge/macOS-Universal-000000?style=for-the-badge&logo=apple&logoColor=white" height="46" alt="Download for macOS" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.95/Atomic.Chat_1.1.95_x64-setup.exe"><img src="https://img.shields.io/badge/Windows-x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="46" alt="Download for Windows" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.95/Atomic.Chat_1.1.95_amd64.AppImage"><img src="https://img.shields.io/badge/Linux-AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="46" alt="Download for Linux" /></a>
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.154/Atomic.Chat_1.1.154_universal.dmg"><img src="https://img.shields.io/badge/macOS-Universal-000000?style=for-the-badge&logo=apple&logoColor=white" height="46" alt="Download for macOS" /></a>&nbsp;
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.154/Atomic.Chat_1.1.154_x64-setup.exe"><img src="https://img.shields.io/badge/Windows-x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="46" alt="Download for Windows" /></a>&nbsp;
+  <a href="https://github.com/AtomicBot-ai/Atomic-Chat/releases/download/v1.1.154/Atomic.Chat_1.1.154_amd64.AppImage"><img src="https://img.shields.io/badge/Linux-AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="46" alt="Download for Linux" /></a>
 </p>
 
 <p align="left"><b>Mobile</b></p>
