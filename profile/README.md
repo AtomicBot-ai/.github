@@ -5,15 +5,50 @@
 </p>
 
 <p align="center">
-  <a href="https://atomicbot.ai">Website</a> ·
-  <a href="https://github.com/AtomicBot-ai/atomicbot#readme">Docs</a> ·
-  <a href="https://discord.gg/2TXafRV69m">Discord</a> ·
-  <a href="https://x.com/atomicbot_ai">X</a>
+  <a href="https://atomicagent.io">Website</a> ·
+  <a href="https://github.com/AtomicBot-ai/atomic-agent#readme">Docs</a> ·
+  <a href="https://discord.gg/Us7qXtDGw">Discord</a> ·
+  <a href="https://x.com/atomicagent_io">X</a>
 </p>
 
 <p align="center">
   Open-source local AI — agents, chat, and inference. Private by default.
 </p>
+
+---
+
+### Atomic Agent
+
+<a href="https://github.com/AtomicBot-ai/atomic-agent/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-agent?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
+
+<p align="center">
+  <img src="https://github.com/AtomicBot-ai/atomic-agent/raw/main/assets/demo.gif" width="100%" alt="Atomic Agent" />
+</p>
+
+A local-first operator agent for `llama.cpp`. Standalone SEA binary, tuned for small local models. Data, traces, browser profile, memory, and model traffic stay on your machine.
+
+#### Install
+
+```sh
+curl -fsSL https://api.atomicbot.ai/agent-install | sh
+```
+
+#### Run
+
+```sh
+atomic-agent
+```
+
+#### Capabilities
+
+- System browser via ARIA snapshots, shell, filesystem, documents (PDF/DOCX/XLSX), git, clipboard, HTTP, notifications
+- GBNF grammar-constrained tool calls, parallel tool batches, cache-hot prompt prefix, externalized state in SQLite
+- Local Markdown skills loaded on demand, FTS5 note recall, durable cron and webhook-triggered tasks
+- TUI, CLI, OpenAI-compatible HTTP server, and a Tauri sidecar speaking newline-delimited JSON
+- Policy-gated dangerous actions, append-only NDJSON traces with prompt-drift replay
 
 ---
 
@@ -245,46 +280,11 @@ A complete REST API for [ClawHub](https://github.com/openclaw/clawhub). The offi
 
 ---
 
-### Atomic Agent
-
-<a href="https://github.com/AtomicBot-ai/atomic-agent/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-agent?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
-
-<p align="center">
-  <img src="https://github.com/AtomicBot-ai/atomic-agent/raw/main/assets/demo.gif" width="100%" alt="Atomic Agent" />
-</p>
-
-A local-first operator agent for `llama.cpp`. Standalone SEA binary, tuned for small local models. Data, traces, browser profile, memory, and model traffic stay on your machine.
-
-#### Install
-
-```sh
-curl -fsSL https://api.atomicbot.ai/agent-install | sh
-```
-
-#### Run
-
-```sh
-atomic-agent
-```
-
-#### Capabilities
-
-- System browser via ARIA snapshots, shell, filesystem, documents (PDF/DOCX/XLSX), git, clipboard, HTTP, notifications
-- GBNF grammar-constrained tool calls, parallel tool batches, cache-hot prompt prefix, externalized state in SQLite
-- Local Markdown skills loaded on demand, FTS5 note recall, durable cron and webhook-triggered tasks
-- TUI, CLI, OpenAI-compatible HTTP server, and a Tauri sidecar speaking newline-delimited JSON
-- Policy-gated dangerous actions, append-only NDJSON traces with prompt-drift replay
-
----
-
 ### Community
 
 <p>
-  <a href="https://discord.gg/2TXafRV69m"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>&nbsp;
-  <a href="https://x.com/atomicbot_ai"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=fff" alt="X" /></a>&nbsp;
+  <a href="https://discord.gg/Us7qXtDGw"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>&nbsp;
+  <a href="https://x.com/atomicagent_io"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=fff" alt="X" /></a>&nbsp;
   <a href="https://www.linkedin.com/company/atomicbot/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=fff" alt="LinkedIn" /></a>
 </p>
 
