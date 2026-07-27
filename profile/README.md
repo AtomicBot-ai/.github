@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="https://atomicbot.ai">Website</a> ·
-  <a href="https://github.com/AtomicBot-ai/atomicbot#readme">Docs</a> ·
-  <a href="https://discord.gg/2TXafRV69m">Discord</a> ·
-  <a href="https://x.com/atomicbot_ai">X</a>
+  <a href="https://atomicagent.io">Website</a> ·
+  <a href="https://github.com/AtomicBot-ai/atomic-agent#readme">Docs</a> ·
+  <a href="https://discord.gg/Us7qXtDGw">Discord</a> ·
+  <a href="https://x.com/atomicagent_io">X</a>
 </p>
 
 <p align="center">
@@ -80,6 +80,49 @@ curl http://localhost:1337/v1/chat/completions -d '{
 </p>
 ---
 
+### Atomic Agent
+
+<a href="https://github.com/AtomicBot-ai/atomic-agent/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-agent?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
+<a href="https://github.com/AtomicBot-ai/atomic-agent#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
+
+<p align="center">
+  <img src="https://github.com/AtomicBot-ai/atomic-agent/raw/main/assets/demo.gif" width="100%" alt="Atomic Agent" />
+</p>
+
+A local-first AI agent that runs on your machine, with local or cloud models. It drives your browser, reads and edits files, runs approved shell commands, and remembers context across sessions. Runs on our TurboQuant `llama.cpp`, so small quantized models stay useful for long, multi-step work on ordinary hardware.
+
+#### Install
+
+macOS / Linux:
+
+```sh
+curl -fsSL https://api.atomicbot.ai/agent-install | sh
+```
+
+Windows (PowerShell):
+
+```powershell
+irm https://raw.githubusercontent.com/AtomicBot-ai/atomic-agent/main/scripts/install.ps1 | iex
+```
+
+#### Run
+
+```sh
+atomic-agent
+```
+
+#### Capabilities
+
+- System browser via ARIA snapshots, shell, filesystem, documents (PDF/DOCX/XLSX), git, clipboard, HTTP, notifications
+- GBNF grammar-constrained tool calls, parallel tool batches, cache-hot prompt prefix, externalized state in SQLite
+- Local Markdown skills loaded on demand, FTS5 note recall, durable cron and webhook-triggered tasks
+- TUI, CLI, OpenAI-compatible HTTP server, and a Tauri sidecar speaking newline-delimited JSON
+- Policy-gated dangerous actions, append-only NDJSON traces with prompt-drift replay
+
+---
+
 ### Atomic LLaMA
 
 <a href="https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-llama-cpp-turboquant?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
@@ -116,71 +159,7 @@ llama-server -m gemma-4-target.gguf -c 16384 -ngl 99 -ngld 99 -fa on \
 
 - `TQ3_1S` / `TQ4_1S` weight quantization via `llama-quantize` — 25-35% smaller than Q8_0, single-digit % PPL delta
 - Regularly synced with `ggml-org/llama.cpp`
-- Powers local inference in Atomic Chat, Atomic Hermes, and Atomic Agent
-
----
-
-### Atomic Hermes
-
-<a href="https://github.com/AtomicBot-ai/atomic-hermes/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-hermes?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-hermes/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-hermes?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-hermes/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-hermes?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-hermes#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
-
-<p align="center">
-  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/hermes-ui.png" width="100%" alt="Atomic Hermes" />
-</p>
-
-A native autonomous AI agent for desktop. Built on the [Hermes Agent](https://github.com/NousResearch/hermes-agent) core by Nous Research, with computer use, time-travel file history, and offline operation.
-
-#### Download
-
-<p>
-  <a href="https://github.com/AtomicBot-ai/atomic-hermes/releases/latest"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>
-</p>
-
-#### Highlights
-
-- Computer use with native OCR (Apple Vision / Windows.Media.Ocr) — pixel-accurate click coordinates, no guessing
-- Time-travel file history: every file the agent touches is snapshotted before and after, one-click diff or restore
-- Self-improving skills and memory: the agent writes its own procedures and decides what to remember across sessions
-- Bundled inference engine, or 20+ cloud providers (OpenRouter, Anthropic, OpenAI, Gemini, DeepSeek, others)
-- One agent across 16+ messengers — Telegram, Discord, Slack, WhatsApp, Signal, iMessage, Email, Matrix, Teams
-- 40+ tools, MCP-native: file ops, web search, code execution, subagents, cron, browser automation, [agentskills.io](https://agentskills.io) Skills Hub
-- Approval modals for dangerous shell commands and writes
-
----
-
-### Atomic Claw
-
-<a href="https://github.com/AtomicBot-ai/atomicbot/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomicbot?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomicbot/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomicbot?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomicbot/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomicbot?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomicbot#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
-
-<p align="center">
-  <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/chat.jpg" width="100%" alt="Atomic Bot" />
-</p>
-
-A native desktop app that turns [OpenClaw](https://github.com/openclaw/openclaw) (330k+ stars) into a personal AI assistant. No terminal, no config, no Docker.
-
-#### Download
-
-<p>
-  <a href="https://github.com/AtomicBot-ai/atomicbot/releases/latest"><img src="https://img.shields.io/badge/Download_for-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" height="44" alt="Download for macOS" /></a>&nbsp;
-  <a href="https://github.com/AtomicBot-ai/atomicbot/releases/latest"><img src="https://img.shields.io/badge/Download_for-Windows-0078D4?style=for-the-badge&logo=windows11&logoColor=white" height="44" alt="Download for Windows" /></a>&nbsp;
-  <img src="https://img.shields.io/badge/Linux-Coming_Soon-555?style=for-the-badge&logo=linux&logoColor=white" height="44" alt="Linux — coming soon" />
-</p>
-
-#### Highlights
-
-- Drafts emails, schedules meetings, summarizes docs, automates the browser
-- 13,000+ skills from ClawHub
-- Multi-model: Claude, GPT, Gemini — switch on the fly with your own API keys
-- One AI across Telegram, Slack, Discord, WhatsApp
-- Built-in Whisper transcription, local or cloud
-- Persistent memory across sessions and tasks
-- Auto-updates to the latest OpenClaw release
+- Powers local inference in Atomic Chat and Atomic Agent
 
 ---
 
@@ -227,64 +206,11 @@ await type("hello");
 
 ---
 
-### ClawHub Layer API
-
-<a href="https://github.com/AtomicBot-ai/clawhub-layer-api/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/clawhub-layer-api?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/clawhub-layer-api/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/clawhub-layer-api?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/clawhub-layer-api/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/clawhub-layer-api?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/clawhub-layer-api#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
-
-A complete REST API for [ClawHub](https://github.com/openclaw/clawhub). The official ClawHub API exposes a subset of the data; this layer aggregates everything into clean endpoints, no Convex knowledge required.
-
-#### Highlights
-
-- Full coverage: skills, metadata, and everything the official API doesn't expose
-- Auto-syncing: periodically pulls and caches the latest data from Convex
-- Standard REST, no upstream dependency at query time
-- Drop-in for apps, bots, and workflows
-
----
-
-### Atomic Agent
-
-<a href="https://github.com/AtomicBot-ai/atomic-agent/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent/commits/main"><img src="https://img.shields.io/github/last-commit/AtomicBot-ai/atomic-agent?style=flat&label=Last%20Commit&color=blueviolet" alt="Last Commit" /></a>&nbsp;
-<a href="https://github.com/AtomicBot-ai/atomic-agent#readme"><img src="https://img.shields.io/badge/Docs-Read-2196F3?style=flat" alt="Docs" /></a>
-
-<p align="center">
-  <img src="https://github.com/AtomicBot-ai/atomic-agent/raw/main/assets/demo.gif" width="100%" alt="Atomic Agent" />
-</p>
-
-A local-first operator agent for `llama.cpp`. Standalone SEA binary, tuned for small local models. Data, traces, browser profile, memory, and model traffic stay on your machine.
-
-#### Install
-
-```sh
-curl -fsSL https://api.atomicbot.ai/agent-install | sh
-```
-
-#### Run
-
-```sh
-atomic-agent
-```
-
-#### Capabilities
-
-- System browser via ARIA snapshots, shell, filesystem, documents (PDF/DOCX/XLSX), git, clipboard, HTTP, notifications
-- GBNF grammar-constrained tool calls, parallel tool batches, cache-hot prompt prefix, externalized state in SQLite
-- Local Markdown skills loaded on demand, FTS5 note recall, durable cron and webhook-triggered tasks
-- TUI, CLI, OpenAI-compatible HTTP server, and a Tauri sidecar speaking newline-delimited JSON
-- Policy-gated dangerous actions, append-only NDJSON traces with prompt-drift replay
-
----
-
 ### Community
 
 <p>
-  <a href="https://discord.gg/2TXafRV69m"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>&nbsp;
-  <a href="https://x.com/atomicbot_ai"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=fff" alt="X" /></a>&nbsp;
+  <a href="https://discord.gg/Us7qXtDGw"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>&nbsp;
+  <a href="https://x.com/atomicagent_io"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=fff" alt="X" /></a>&nbsp;
   <a href="https://www.linkedin.com/company/atomicbot/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=fff" alt="LinkedIn" /></a>
 </p>
 
