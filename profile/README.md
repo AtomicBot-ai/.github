@@ -1,22 +1,22 @@
 <p align="center">
   <a href="https://atomicbot.ai">
-    <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/logo.png" width="120" alt="Atomic" />
+    <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/logo.png" width="120" alt="AtomicBot" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://atomicagent.io">Website</a> ·
-  <a href="https://github.com/AtomicBot-ai/atomic-agent#readme">Docs</a> ·
-  <a href="https://discord.gg/Us7qXtDGw">Discord</a> ·
-  <a href="https://x.com/atomicagent_io">X</a>
+  <a href="https://atomicbot.ai">Website</a> ·
+  <a href="https://discord.gg/2TXafRV69m">Discord</a> ·
+  <a href="https://x.com/atomicbot_ai">X</a>
 </p>
 
 <p align="center">
-  Open-source local AI — agents, chat, and inference. Private by default.
+  AtomicBot runs your AI agents in the cloud. One click, and your agent is live 24/7.
 </p>
 
----
 
+---
+## Other projects:
 ### Atomic Chat
 
 <a href="https://atomic.chat/"><img src="https://img.shields.io/badge/Website-atomic.chat-00B894?style=flat" alt="Website" /></a>&nbsp;
@@ -224,6 +224,10 @@ curl http://localhost:1337/v1/chat/completions -d '{
 ---
 
 ### Atomic Agent
+<a href="https://atomicagent.io">Website</a> ·
+<a href="https://github.com/AtomicBot-ai/atomic-agent#readme">Docs</a> ·
+<a href="https://discord.gg/Us7qXtDGw">Discord</a> ·
+<a href="https://x.com/atomicagent_io">X</a>
 
 <a href="https://github.com/AtomicBot-ai/atomic-agent/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
 <a href="https://github.com/AtomicBot-ai/atomic-agent/network/members"><img src="https://img.shields.io/github/forks/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Forks&color=4ac1f2" alt="Forks" /></a>&nbsp;
