@@ -226,7 +226,7 @@ curl http://localhost:1337/v1/chat/completions -d '{
 ### Atomic Agent
 <a href="https://atomicagent.io">Website</a> ·
 <a href="https://github.com/AtomicBot-ai/atomic-agent#readme">Docs</a> ·
-<a href="https://discord.gg/Us7qXtDGw">Discord</a> ·
+<a href="https://discord.gg/kXWDFSJpMW">Discord</a> ·
 <a href="https://x.com/atomicagent_io">X</a>
 
 <a href="https://github.com/AtomicBot-ai/atomic-agent/stargazers"><img src="https://img.shields.io/github/stars/AtomicBot-ai/atomic-agent?style=flat&logo=github&label=Stars&color=f5c542" alt="Stars" /></a>&nbsp;
