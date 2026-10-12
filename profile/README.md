@@ -1,22 +1,21 @@
 <p align="center">
-  <a href="https://atomicbot.ai">
-    <img src="https://github.com/AtomicBot-ai/.github/raw/main/assets/logo.png" width="120" alt="AtomicBot" />
+  <a href="https://atomic.chat">
+    <img src="https://github.com/AtomicBot-ai/Atomic-Chat/raw/main/assets/logo.png" width="120" alt="AtomicBot" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://atomicbot.ai">Website</a> ·
+  <a href="https://atomicbot.chat">Website</a> ·
   <a href="https://discord.gg/2TXafRV69m">Discord</a> ·
-  <a href="https://x.com/atomicbot_ai">X</a>
+  <a href="https://x.com/atomic_chat_hq">X</a>
 </p>
 
 <p align="center">
-  AtomicBot runs your AI agents in the cloud. One click, and your agent is live 24/7.
+  The simplest way to run open models on any hardware
 </p>
 
 
 ---
-## Other projects:
 ### Atomic Chat
 
 <a href="https://atomic.chat/"><img src="https://img.shields.io/badge/Website-atomic.chat-00B894?style=flat" alt="Website" /></a>&nbsp;
