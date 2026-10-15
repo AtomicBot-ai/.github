@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://atomic.chat">
-    <img src="https://github.com/AtomicBot-ai/Atomic-Chat/raw/main/assets/logo.png" width="120" alt="AtomicBot" />
+    <img src="https://github.com/AtomicBot-ai/Atomic-Chat/raw/main/assets/logo.png" width="120" alt="AtomicChat" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://atomicbot.chat">Website</a> ·
-  <a href="https://discord.gg/2TXafRV69m">Discord</a> ·
+  <a href="https://discord.com/invite/8wGSsvmg4V">Discord</a> ·
   <a href="https://x.com/atomic_chat_hq">X</a>
 </p>
 
